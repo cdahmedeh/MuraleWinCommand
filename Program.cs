@@ -30,9 +30,12 @@ namespace MuraleWinCommand
 			bool valid = CommandLine.Parser.Default.ParseArgumentsStrict(args, options);
 			string file = options.File;
 			
-			if (valid) {
+			if (valid) 
+			{
 				SetWallpaper(file);
-			} else {
+			} 
+			else
+			{
 				Console.WriteLine("Invalid Command Line Arguments Provided");
 			}
 		}
